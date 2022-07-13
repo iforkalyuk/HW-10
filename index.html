@@ -3,9 +3,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Селекторы</title>
 </head>
 <body>
-    
+<ol>
+    <li class="aqua"><b> Селектор элемента.</b> Селекторы элементов позволяют форматировать все элементы данного типа на всех страницах сайта.(абзац "p", все элементы списка "ol")</li>
+    <li><b> Селектор класса.</b> Селекторы класса позволяют задавать стили для одного и более элементов с одинаковым именем класса, размещенных в разных местах страницы или на разных страницах сайта. (div класса inside)</li>
+    <li><b>Селектор по нескольким классам.</b> Селекторы класса позволяют задавать стили для одного и более элементов с указанными именами классов. (div класса green и класса green2; элементы класса aqua и aqua1 , вложенные в элемент класса wrap)</li>
+    <li><b>Селектор потомка(вложенности).</b> Cелекторы потомков применяют стили к элементам, расположенным внутри элемента-контейнера.(все элементы div вложенные в контейнер div; элементы класса blue , вложенные в элемент класса wrap, весь текст выделенный жирным шрифтом контейнера ol)</li>
+    <li><b>Селектор идентификатора.</b> Селектор идентификатора позволяет форматировать один конкретный элемент.(элементы с конкретным идентификатором id="red", id="yellow")</li>
+ </ol>
+<div class="wrap">
+    <div id="red" class="inside">TEXT</div>
+    <div class="inside green">TEXT</div>
+    <div class="inside green2">TEXT</div>
+</div>
+
+<div class="wrap">
+    <div class="inside blue">TEXT</div>
+    <div class="inside">TEXT</div>
+    <div id="yellow" class="inside">TEXT</div>
+</div>
+
+<div class="wrap">
+    <div class="inside aqua">TEXT</div>
+    <div class="inside aqua1">TEXT</div>
+    <div class="inside aqua"><p>TEXT</p></div>
+</div>
 </body>
 </html>

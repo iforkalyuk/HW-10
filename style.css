@@ -1,0 +1,57 @@
+
+*, body, html{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+li, li b{
+    font-size: 20px;
+}
+
+p{
+    font-size: 50px;
+    color: black;
+}
+div div{
+color: brown ;
+}
+
+#red {
+color: red;
+}
+
+#yellow{
+    color: yellow;
+}
+
+.green, .green2{
+color: green;
+}
+
+.wrap .blue{
+color: blue;
+}
+
+.wrap .aqua, .wrap .aqua1 {
+    color: aqua;
+}
+
+ol b{
+    color: darkmagenta;
+}
+
+ol{
+    color: grey;
+}
+
+.inside{
+border: solid black;
+width: 200px;
+height: 125px;
+display: inline-block;
+margin: 10px;
+font-size: 50px;
+font-weight: bold;
+text-align: center;
+padding-top: 75px;
+}
